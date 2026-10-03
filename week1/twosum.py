@@ -10,4 +10,4 @@ class Solution(object):
         for i in range(len(nums)):
             if target-nums[i] in values:
                 return [i, values[target-nums[i]]]
-            values[nums[i]] = i
+            values[nums[i]] = i 

@@ -6,9 +6,9 @@ def two_sum(nums, target):
     """
     seen = {}
     for i, v in enumerate(nums):
-        if v in seen:
-            continue
         if target - v in seen:
             return [seen[target - v], i]
+        if v in seen:
+            continue
         seen[v] = i
     return []

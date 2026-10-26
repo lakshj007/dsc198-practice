@@ -1,0 +1,7 @@
+step6
+  extract              attempt 1
+  clean_users          attempt 1
+  clean_events         attempt 1
+  report               attempt 1
+       events: 5  users: 5
+  run finished: success

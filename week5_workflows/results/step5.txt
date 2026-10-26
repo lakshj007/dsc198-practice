@@ -1,0 +1,10 @@
+step5
+  extract              attempt 1
+  clean                attempt 1
+  load_replace_flaky   attempt 1
+       failed, RuntimeError: connection dropped after the write
+  load_replace_flaky   attempt 2
+       failed, RuntimeError: connection dropped after the write
+  load_replace_flaky   attempt 3
+       attempts: 3 rows in table: 5  <- expected 5
+  run finished: success

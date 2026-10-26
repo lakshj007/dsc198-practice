@@ -1,0 +1,5 @@
+# The Week 5 lab. Airflow and DuckDB.
+duckdb>=1.0
+apache-airflow>=3.0,<4
+# Airflow publishes a constraints file per release. If the install fights you, add
+# --constraint with the URL in Appendix A of the Data Workflows handbook.

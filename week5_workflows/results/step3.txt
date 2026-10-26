@@ -1,0 +1,9 @@
+step3
+  extract              attempt 1
+  clean_flaky          attempt 1
+       failed, RuntimeError: api down
+  clean_flaky          attempt 2
+       attempts: 2
+  load                 attempt 1
+       rows in table: 5
+  run finished: success

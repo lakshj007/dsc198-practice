@@ -1,0 +1,10 @@
+ev.csv
+ev.parquet
+events/
+airflow.db
+airflow.db-*
+airflow.cfg
+logs/
+__pycache__/
+.venv/
+.DS_Store

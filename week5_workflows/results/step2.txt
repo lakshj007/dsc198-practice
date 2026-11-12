@@ -1,0 +1,5 @@
+step2
+  extract              attempt 1
+  clean_that_fails     attempt 1
+       failed, RuntimeError: api down
+  run finished: failed

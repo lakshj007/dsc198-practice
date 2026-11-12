@@ -1,0 +1,7 @@
+first run, setting up the Airflow database. This takes a few seconds.
+step1
+  extract              attempt 1
+  clean                attempt 1
+  load                 attempt 1
+       rows in table: 5
+  run finished: success

@@ -1,0 +1,22 @@
+S1  one column of six
+      parquet 0.001 s     csv 0.050 s
+    all six columns
+      parquet 0.000 s     csv 0.053 s
+    file size
+      parquet 56.2 MB     csv 91.6 MB
+
+S2  one day out of a partitioned table
+      Scanning Files: 1/31
+      Total Files Read: 1
+
+S3  the same day, asked for through a different column
+      Total Files Read: 31
+
+S4  the partition column, wrapped in functions
+      Scanning Files: 1/31
+      Total Files Read: 1
+
+    Three queries, one answer, and three different amounts of work.
+    S3 names a column that is not the partition column, so nothing can
+    be skipped. S4 wraps the partition column in functions and DuckDB
+    prunes anyway. Not every engine does. Check yours.
